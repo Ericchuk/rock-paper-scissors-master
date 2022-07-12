@@ -1,0 +1,46 @@
+:root{
+    --Radial-Gradient: linear-gradient(90deg, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    --Dark-Text: hsl(229, 25%, 31%);
+    --Score-Text: hsl(229, 64%, 46%);
+    --Header-Outline: hsl(217, 16%, 45%);
+    --Scissors-Gradient: linear-gradient(90deg, hsl(39, 89%, 49%),hsl(40, 84%, 53%)) ;
+    --Paper-Gradient:linear-gradient(90deg, hsl(230, 89%, 62%),hsl(230, 89%, 65%)) ;
+    --Rock-Gradient:linear-gradient(90deg,hsl(349, 71%, 52%),hsl(349, 70%, 56%)) ;
+    --Lizard-Gradient:linear-gradient(90deg,hsl(261, 73%, 60%),hsl(261, 72%, 63%)) ;
+    --Cyan:linear-gradient(90deg,hsl(189, 59%, 53%),hsl(189, 58%, 57%));
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container .modal{
+    background-image:url(images/image-rules.svg);
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:100vh;
+    padding:40px 0;
+    margin:0 20px;
+    width:auto;
+    text-align: center;
+    position: relative;
+}
+.container .modal h2{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+.container .modal .close{
+    position: absolute;
+    bottom:40px;
+}
+.container .step1{
+    /* display: none; */
+    position: absolute;
+    top:0;
+    height: 100vh;
+    background-image: linear-gradient(90deg, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    width: 100%;
+}
