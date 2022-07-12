@@ -7,11 +7,11 @@ function closeRule(){
     if(modal.style.display === "none"){
         modal.style.display = "block";
         gameBoard.style.display = "none"
-        console.log("@@@")
+        // console.log("@@@")
     }else{
         modal.style.display = "none";
         gameBoard.style.display = "block"
-        console.log("@")
+        // console.log("@")
     }
 }
 
