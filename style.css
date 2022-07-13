@@ -41,6 +41,9 @@ body{
     position: absolute;
     bottom:40px;
 }
+.displayNone{
+    display:none;
+}
 .container .step1{
     /* display: none; */
     position: absolute;
@@ -50,7 +53,7 @@ body{
     width: 100%;
     text-align: center;
     padding:20px;
-    display: none;
+    /* display: none; */
 }
 .container .step1 header{
     display: flex;
@@ -89,7 +92,7 @@ body{
     background-position: center;
     position: relative;
 }
-.container .step1 .hands div{
+.container .step1 .hands .imgContainer{
     /* border:3px solid gainsboro; */
     width:35%;
     height:54%;
@@ -102,25 +105,56 @@ body{
     background-color: white;
     box-shadow: ;
 }
-.container .step1 .hands div:first-child{
+.container .step1 .hands .imgContainer:first-child{
     border-color: skyblue;
     position: absolute;
     top:-50px;
     left:4%;
     height:54%;
 }
-.container .step1 .hands div:nth-child(2){
+.container .step1 .hands .imgContainer:nth-child(2){
     border-color:red;
     position: absolute;
     bottom:-30px;
     left:31%;
     height: 53%;
 }
-.container .step1 .hands div:nth-child(3){
+.container .step1 .hands .imgContainer:nth-child(3){
     position: absolute;
     top:-50px;
     right:5%;
     border-color:yellow;
+}
+.container .step1 .hands p.picked{
+    width:auto;
+    /* border:2px solid red; */
+    position: absolute;
+    left: 10px;
+    color:#fff;
+    font-size: 20px;
+    display: none;
+    top:200px;
+}
+.container .step1 .hands p.housePicked{
+    left:auto;
+    right:0px;
+}
+.positionHand{
+    animation: moveBottom 3s ease-in;
+    left:0;
+    position: relative;
+}
+.circle{
+    position:absolute;
+    top:50px;
+    right:10px;
+    left:auto;
+    width:37%;
+    height:55%;
+    /* border:2px solid black; */
+    border-radius: 100px;
+    background-color:rgba(0, 0, 0, 0.521);
+    animation: moveRight 3s ease-in;
 }
 .container h2{
     border:2px solid var(--Header-Outline);
@@ -133,4 +167,52 @@ body{
     width:40%;
     padding:10px 30px;
     margin:10px;
+}
+
+@keyframes moveBottom{
+    0%{
+        transform: translateY(0px);
+    }
+    10%{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: translateY(60px);
+    }
+    100%{
+        transform: translateY(100px);
+    }
+
+}
+
+@keyframes moveLeft{
+    0%{
+        transform: translateX(0px);
+    }
+    10%{
+        transform: translateX(-10px);
+    }
+    50%{
+        transform: translateX(-60px);
+    }
+    100%{
+        transform: translateX(-100px);
+    }
+
+}
+
+@keyframes moveRight{
+    0%{
+        transform: translateX(100px);
+    }
+    10%{
+        transform: translateX(60px);
+    }
+    50%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+
 }
