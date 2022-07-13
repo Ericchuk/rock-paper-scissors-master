@@ -52,23 +52,28 @@ function pickPaper(){
         
     }
     setTimeout(time, 3000);
+    let computerChoice;
+    function generateComputerChoice(){
+        let random = Math.floor(Math.random() * arrayOfFingers.length);
+        console.log(random);
+        if(random === 0 ){
+            computerChoice = arrayOfFingers[2];
+            arrayOfFingers[2].style.display = "block";
+        }
+        else if(random === 2 ){
+            computerChoice = arrayOfFingers[1];
+            arrayOfFingers[1].style.display = "block";
+        }
+        else if(random === 1 ){
+            computerChoice = arrayOfFingers[0];
+            arrayOfFingers[0].style.display = "block";
+        }
+        bg.appendChild(computerChoice);
+        computerChoice.classList.toggle("circle");
+}
     generateComputerChoice()
     // arrayOfFingers[2].classList.toggle("displayNone")
 }
 arrayOfFingers[0].addEventListener("click", pickPaper);
-let computerChoice;
-function generateComputerChoice(){
-    let random = Math.floor(Math.random() * arrayOfFingers.length);
-    console.log(random);
-    if(random === 0 ){
-        computerChoice = arrayOfFingers[2];
-    }
-    else if(random === 2 ){
-        computerChoice = arrayOfFingers[1];
-    }
-    else if(random === 1 ){
-        computerChoice = arrayOfFingers[0];
-    }
-    // bg.appendChild(computerChoice);
-}
+
 // generateComputerChoice();
