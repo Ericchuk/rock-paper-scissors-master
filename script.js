@@ -87,7 +87,6 @@ function pickPaper(){
 }
 arrayOfFingers[0].addEventListener("click", pickPaper);
 
-=======
 let close = document.querySelector(".close");
 let rulesBtn = document.querySelector(".rules");
 let modal = document.querySelector(".modal");
