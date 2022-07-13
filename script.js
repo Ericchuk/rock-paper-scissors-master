@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 let close = document.querySelector(".close");
 let rulesBtn = document.querySelector(".rules");
 let modal = document.querySelector(".modal");
@@ -167,5 +166,4 @@ function pickPaper(){
 }
 arrayOfFingers[0].addEventListener("click", pickPaper);
 
->>>>>>> 93570456614c36caa030de3e0fa1791c17f8d19c
 // generateComputerChoice();
