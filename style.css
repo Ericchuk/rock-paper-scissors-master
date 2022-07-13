@@ -152,9 +152,35 @@ body{
     width:37%;
     height:55%;
     /* border:2px solid black; */
-    border-radius: 100px;
+    /* border-radius: 100px; */
     /* background-color:rgba(0, 0, 0, 0.521); */
     animation: moveRight 3s ease-in;
+}
+.ifSame{
+    background-color: white;
+    width:35%;
+    padding:16px;
+    border:10px solid;
+    border-color:skyblue;
+    border-radius:100px;
+}
+.ifSameRock{
+    background-color: white;
+    width:35%;
+    padding:25px 15px;
+    border:10px solid;
+    border-color:red;
+    border-radius:100px;
+    /* height:100px; */
+}
+.ifSameScissors{
+    background-color: white;
+    width:35%;
+    padding:25px 15px;
+    border:10px solid;
+    border-color:yellow;
+    border-radius:100px;
+    /* height:100px; */
 }
 .container h2{
     border:2px solid var(--Header-Outline);

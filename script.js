@@ -57,21 +57,32 @@ function pickPaper(){
         let random = Math.floor(Math.random() * arrayOfFingers.length);
         console.log(random);
         if(random === 0 ){
-            computerChoice = arrayOfFingers[2];
-            arrayOfFingers[2].style.display = "block";
+            let img = document.createElement("img");
+            img.setAttribute("src", "images/icon-scissors.svg");
+            img.classList.toggle("ifSameScissors");
+            computerChoice = img;
         }
         else if(random === 2 ){
-            computerChoice = arrayOfFingers[1];
-            arrayOfFingers[1].style.display = "block";
+            let img = document.createElement("img");
+            img.setAttribute("src", "images/icon-rock.svg");
+            img.classList.toggle("ifSameRock");
+            computerChoice = img;
         }
         else if(random === 1 ){
-            computerChoice = arrayOfFingers[0];
-            arrayOfFingers[0].style.display = "block";
+            let img = document.createElement("img");
+            img.setAttribute("src", "images/icon-paper.svg");
+            img.classList.toggle("ifSame");
+            computerChoice = img;
+            
+            // arrayOfFingers[0].style.display = "block";
         }
         bg.appendChild(computerChoice);
         computerChoice.classList.toggle("circle");
 }
     generateComputerChoice()
+    // function result(){
+    //     if{}
+    // }
     // arrayOfFingers[2].classList.toggle("displayNone")
 }
 arrayOfFingers[0].addEventListener("click", pickPaper);
